@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * @author lixiahan
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
+@Target(ElementType.METHOD)
 public @interface Entity {
     String value() default "";
 }

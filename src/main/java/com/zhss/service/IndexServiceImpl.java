@@ -1,5 +1,6 @@
 package com.zhss.service;
 
+import com.zhss.anno.Entity;
 import com.zhss.dao.IndexDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -19,6 +20,7 @@ public class IndexServiceImpl {
         System.out.println( dao.selectAll());
     }
 
+    @Entity
     public void query() {
         System.out.println("query");
     }
